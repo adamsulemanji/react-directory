@@ -62,7 +62,7 @@ function Tiles() {
           <div className="card">
             <div className="card-body grid grid-cols-2 p-4">
               <div>
-                <h5 className="card-title">Name: {people[selectedCardIndex].Name}</h5>
+              <h5 className="card-title">Name: {selectedCardIndex !== null ? people[selectedCardIndex].Name : ''}</h5>
                 <p className="card-text">
                   Director of: {people[selectedCardIndex].Classification}
                 </p>
@@ -94,7 +94,7 @@ function Tiles() {
       )}
       {isContactVisible && (
         <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <Contact selectedPerson={people[selectedCardIndex]} onClose={handleContactClickClose} />
+          <Contact selectedPerson={people[selectedCardIndex]} onClose = {() => handleContactClickClose(selectedCardIndex)} onClose2 = {() => handleCardClickClose(selectedCardIndex)}/>
         </div>
       )}
     </div>

@@ -8,12 +8,12 @@ function Info() {
         <div className="justify-center border-2 border-red-300 leading-3">
             <div className="text-center m-5 leading-3">
                 <h1 className="mb-4">Welcome to my sandboxing app!</h1>
-                <h2 className="mb-4">
+                <h4 className="mb-4">
                     This is a test of the emergency broadcast system
-                </h2>
-                <h2 className="mb-8">
+                </h4>
+                <h4 className="m-8 p-8">
                     Here I will be doing testing of various React components and features so I can improve my skills.
-                </h2>
+                </h4>
             </div>
         </div>
     )

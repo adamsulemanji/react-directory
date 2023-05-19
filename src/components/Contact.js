@@ -1,21 +1,46 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useLocation } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert';
+import { useState } from 'react';
 
-function Contact({selectedPerson, onClose}) {
+function Contact({selectedPerson, onClose, onClose2}) {
+
+    const [show, setShow] = useState(true);
+
+    const closeModal = () => {
+        setShow(false);
+        onClose();
+        onClose2();
+    };
 
     const handleSubmit = (e) => {
+        console.log('Form submitted!');
         e.preventDefault();
-        console.log(`Thank you for your submission to ${selectedPerson.Name}!`);
-        onClose();
-        <Alert variant="success"> Thank you for your submission to {selectedPerson.Name}! </Alert>
-      };
 
+        if (selectedPerson) {
+            console.log(`Thank you for your submission to ${selectedPerson.Name}!`);
+            <Alert variant="success">
+                <Alert.Heading>Hey, nice to see you</Alert.Heading>
+                <p>
+                    Thank you for your submission to {selectedPerson.Name}!
+                </p>
+            </Alert>
+
+        } else {
+            console.log('No person selected!');
+        }
+
+        closeModal();
+    };
+
+    if (!show) {
+        return null;
+    }
 
     return (
-        <div className="relative flex items-top justify-center h-auto p-5 shadow-md bg-white dark:bg-gray-900 sm:items-center sm:pt-0 round-xl">
+        <div className="relative flex items-top justify-center h-auto shadow-md bg-white dark:bg-gray-900 sm:items-center sm:pt-0 rounded-xl">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8 shadow-md">
-            <div className="mt-8 overflow-hidden">
+            <div className="my-8 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
                         <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
@@ -56,7 +81,7 @@ function Contact({selectedPerson, onClose}) {
 
                     <form className="p-6 flex flex-col justify-center" onSubmit={handleSubmit}>
                         <div className="flex flex-col">
-                            <label for="name" className="hidden">{selectedPerson.Name}</label>
+                            <label for="name" className="hidden">Name</label>
                             <input type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
                         </div>
 
@@ -70,9 +95,14 @@ function Contact({selectedPerson, onClose}) {
                             <input type="tel" name="tel" id="tel" placeholder="Telephone Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></input>
                         </div>
 
-                        <button type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                            Submit
+                        <div className='flex flex-row mx space-x-3'>
+                            <button type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                                Submit
+                            </button>
+                            <button className="btn btn-danger md:w-32 mt-3 py-3 px-6 font-bold rounded-lg text-white" onClick={closeModal}>
+                                Close
                         </button>
+                        </div>
                     </form>
                 </div>
             </div>
