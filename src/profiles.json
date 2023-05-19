@@ -1,0 +1,142 @@
+[
+  {
+    "Name": "John Smith",
+    "Classification": "Employee",
+    "Age": 32,
+    "Email": "john.smith@example.com",
+    "Phone": "+1 (123) 456-7890"
+  },
+  {
+    "Name": "Emily Johnson",
+    "Classification": "Manager",
+    "Age": 45,
+    "Email": "emily.johnson@example.com",
+    "Phone": "+1 (234) 567-8901"
+  },
+  {
+    "Name": "Michael Davis",
+    "Classification": "Intern",
+    "Age": 21,
+    "Email": "michael.davis@example.com",
+    "Phone": "+1 (345) 678-9012"
+  },
+  {
+    "Name": "Sarah Thompson",
+    "Classification": "Employee",
+    "Age": 28,
+    "Email": "sarah.thompson@example.com",
+    "Phone": "+1 (456) 789-0123"
+  },
+  {
+    "Name": "Daniel Wilson",
+    "Classification": "Manager",
+    "Age": 37,
+    "Email": "daniel.wilson@example.com",
+    "Phone": "+1 (567) 890-1234"
+  },
+  {
+    "Name": "Jennifer Brown",
+    "Classification": "Employee",
+    "Age": 39,
+    "Email": "jennifer.brown@example.com",
+    "Phone": "+1 (678) 901-2345"
+  },
+  {
+    "Name": "David Lee",
+    "Classification": "Intern",
+    "Age": 24,
+    "Email": "david.lee@example.com",
+    "Phone": "+1 (789) 012-3456"
+  },
+  {
+    "Name": "Jessica Anderson",
+    "Classification": "Employee",
+    "Age": 31,
+    "Email": "jessica.anderson@example.com",
+    "Phone": "+1 (890) 123-4567"
+  },
+  {
+    "Name": "Andrew Miller",
+    "Classification": "Manager",
+    "Age": 42,
+    "Email": "andrew.miller@example.com",
+    "Phone": "+1 (901) 234-5678"
+  },
+  {
+    "Name": "Olivia Taylor",
+    "Classification": "Employee",
+    "Age": 26,
+    "Email": "olivia.taylor@example.com",
+    "Phone": "+1 (012) 345-6789"
+  },
+  {
+    "Name": "Christopher Martinez",
+    "Classification": "Intern",
+    "Age": 22,
+    "Email": "christopher.martinez@example.com",
+    "Phone": "+1 (123) 456-7890"
+  },
+  {
+    "Name": "Sophia Garcia",
+    "Classification": "Employee",
+    "Age": 34,
+    "Email": "sophia.garcia@example.com",
+    "Phone": "+1 (234) 567-8901"
+  },
+  {
+    "Name": "Matthew Thomas",
+    "Classification": "Manager",
+    "Age": 48,
+    "Email": "matthew.thomas@example.com",
+    "Phone": "+1 (345) 678-9012"
+  },
+  {
+    "Name": "Ava Hernandez",
+    "Classification": "Employee",
+    "Age": 29,
+    "Email": "ava.hernandez@example.com",
+    "Phone": "+1 (456) 789-0123"
+  },
+  {
+    "Name": "James Clark",
+    "Classification": "Intern",
+    "Age": 23,
+    "Email": "james.clark@example.com",
+    "Phone": "+1 (567) 890-1234"
+  },
+  {
+    "Name": "Grace Walker",
+    "Classification": "Employee",
+    "Age": 33,
+    "Email": "grace.walker@example.com",
+    "Phone": "+1 (678) 901-2345"
+  },
+  {
+    "Name": "Benjamin Lewis",
+    "Classification": "Manager",
+    "Age": 41,
+    "Email": "benjamin.lewis@example.com",
+    "Phone": "+1 (789) 012-3456"
+  },
+  {
+    "Name": "Natalie Young",
+    "Classification": "Employee",
+    "Age": 27,
+    "Email": "natalie.young@example.com",
+    "Phone": "+1 (890) 123-4567"
+  },
+  {
+    "Name": "Ryan Moore",
+    "Classification": "Intern",
+    "Age": 25,
+    "Email": "ryan.moore@example.com",
+    "Phone": "+1 (901) 234-5678"
+  },
+  {
+    "Name": "Lily Rodriguez",
+    "Classification": "Employee",
+    "Age": 35,
+    "Email": "lily.rodriguez@example.com",
+    "Phone": "+1 (012) 345-6789"
+  }
+]
